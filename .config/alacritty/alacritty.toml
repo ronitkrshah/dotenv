@@ -1,0 +1,34 @@
+# Alacritty Configuration file
+
+# Import Files
+import = ["~/.config/alacritty/tokyonight_night.toml"]
+
+# Windows specific configuration
+[window]
+
+dynamic_title = false
+
+# Font Configuration
+[font]
+normal = { family = "CodeNewRoman Nerd Font Propo", style="Regular" }
+bold = { family = "CodeNewRoman Nerd Font Propo", style="Bold" }
+italic = { family = "VictorMono Nerd Font Propo", style="Italic" }
+bold_italic = { family = "VictorMono Nerd Font Propo", style="Bold Italic" }
+
+size = 13.0
+
+
+# Cursor Settings
+[cursor]
+vi_mode_style = { shape = "Block", blinking = "Always" }
+blink_interval = 400
+
+
+# Mouse Settings
+[mouse]
+hide_when_typing = true
+
+# Keybindings
+[keyboard]
+bindings = [{ key = "F11", action = "ToggleFullScreen"}]
+

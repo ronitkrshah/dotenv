@@ -3,6 +3,10 @@
 # Import Files
 import = ["~/.config/alacritty/tokyonight_night.toml"]
 
+# Terminal
+[env]
+term = "xterm-256color"
+
 # Windows specific configuration
 [window]
 

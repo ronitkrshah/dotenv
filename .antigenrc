@@ -11,7 +11,7 @@ antigen bundle z-shell/F-Sy-H --branch=main
 antigen bundle marlonrichert/zsh-autocomplete --branch=main
 
 # Select theme
-antigen theme alejandromume/macos-zsh-theme
+antigen theme philip82148/simplerich-zsh-theme --branch=main
 
 # Tell Antigen that you're done
 antigen apply

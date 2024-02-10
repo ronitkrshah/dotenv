@@ -1,7 +1,13 @@
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
 # Load bundles from external repos
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle z-shell/F-Sy-H --branch=main
 antigen bundle marlonrichert/zsh-autocomplete --branch=main
+
+# Select theme
+antigen theme robbyrussell
 
 # Tell Antigen that you're done
 antigen apply

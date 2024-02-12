@@ -25,7 +25,7 @@ size = 13.0
 
 # Cursor Settings
 [cursor]
-vi_mode_style = { shape = "Block", blinking = "Always" }
+vi_mode_style = { shape = "Block", blinking = "Off" }
 blink_interval = 400
 
 

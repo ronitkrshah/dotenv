@@ -1,21 +1,30 @@
 # History
-HISTSIZE=5000
+HISTSIZE=10000
 HISTFILE=~/.zsh_history
-SAVEHIST=5000
+SAVEHIST=10000
 
 # Alias
 alias vi=nvim
 
 export EDITOR='nvim'
 
-# Load Antigen
-source ~/.config/antigen.zsh
+# Load ZSH Plugin Manager
+source ~/.config/antigen/antigen.zsh
 
-# Load Antigen configurations
-antigen init ~/.antigenrc
+# Show System Info
+neofetch
 
-# Bind TAB
-bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
 
-# Cowsay
-cowsay -f tux "Linux - Keep It Simple"
+LBIN=/home/rks/Bin
+
+export PATH=$LBIN/nvim/bin:$PATH
+export PATH=$LBIN/jdk/bin:$PATH
+export PATH=$LBIN/node/bin:$PATH
+
+export ANDROID_HOME=$LBIN/Android
+
+# Load Modules
+antigen init ~/.config/antigen/antigenrc
